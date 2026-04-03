@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Irong-Forge GYM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav id="navbar">
+    <div class="logo">Iron<span>Forge</span></div>
+    <ul class="nav-links">
+    <li><a href="#programs">Programs</a></li>
+    <li><a href="#results">Results</a></li> 
+    <li><a href="#contact">contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+        
+    </button>
+  </nav>
+ <section class="hero" id="home">
+    <h1>Forge Your <span>Limits</span></h1>
+    <p>Where serious athletes transform their bodies with elite coaching. </p>
+    <a href="#contact" class="btn-primary">Start Free Trial</a>
+ </section>
+   
+ <!-- STATS -->
+<div class="stats">
+    <div class="stat-item">
+        <span class="stat-num" data-target="1200">0</span>
+        <span class="stat-label">Active Members</span>
+    </div>
+    <div class="stat-item">
+        <span class="stat-num" data-target="15">0</span>
+        <span class="stat-label">Expert Coaches</span>
+    </div>
+    <div class="stat-item">
+        <span class="stat-num" data-target="98">0</span>
+        <span class="stat-label">% Satisfaction</span>
+    </div>
+    <div class="stat-item">
+        <span class="stat-num" data-target="6">0</span>
+        <span class="stat-label">Years Strong</span>
+    </div>
+</div>
+
+<!-- CONTACT FORM -->
+<section class="contact" id="contact">
+    <h2>Start Today</h2>
+    <p>Fill out the form and we'll get back to you within 24 hours.</p>
+    <form id="contactForm">
+        <div class="form-group">
+            <label>Full Name</label>
+            <input type="text" id="name" placeholder="John Doe">
+            <span class="error-msg" id="nameError">Please enter your name</span>
+        </div>
+        <div class="form-group">
+            <label>Email</label>
+            <input type="email" id="email" placeholder="john@email.com">
+            <span class="error-msg" id="emailError">Please enter a valid email</span>
+        </div>
+        <div class="form-group">
+            <label>Program</label>
+            <select id="program">
+                <option value="">Select a program...</option>
+                <option>Strength & Power</option>
+                <option>HIIT & Conditioning</option>
+                <option>Personal Training</option>
+            </select>
+            <span class="error-msg" id="programError">Please select a program</span>
+        </div>
+        <button type="submit" class="btn-submit">Send Message</button>
+        <div class="success-msg" id="successMsg">
+            Message sent! We'll contact you within 24 hours.
+        </div>
+    </form>
+</section>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+    <a href="#programs">Programs</a>
+    <a href="#results">Results</a>
+    <a href="#contact">Contact</a>
+</div>
+
+
+ <script src="app.js"></script>
+</body>
+</html>
